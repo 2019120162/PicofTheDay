@@ -2,9 +2,9 @@
 
 // Arrays of sample images and greetings
 const images = [
-    "https://assets.codepen.io/8689/lake-thumb.jpg",
-    "https://assets.codepen.io/8689/photo-thumb.jpg",
-    "https://assets.codepen.io/8689/gopro-thumb.jpg"
+    "https://loremflickr.com/320/240?random=1",
+    "https://loremflickr.com/320/240?random=2",
+    "https://loremflickr.com/320/240?random=3"
   ];
 
 
