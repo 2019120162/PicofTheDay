@@ -8,13 +8,19 @@ const images = [
   ];
 
 
-const greetings = [
-    'Good Morning!',
-    'Hello there!',
-    'Hope you have a great day!',
-    'Wishing you a wonderful day ahead!',
-    'Stay awesome!',
+  const greetings = [
+    'Wishing you a day filled with joy and endless possibilities.',
+    'May today bring you peace, love, and happiness.',
+    'Here\'s to a beautiful day, full of hope and inspiration.',
+    'Let today be the beginning of something extraordinary.',
+    'May your day be as bright and lovely as you are.',
+    'Embrace this new day with a heart full of gratitude and joy.',
+    'A fresh new day awaits you—may it be full of promise.',
+    'Here\'s to another day of new opportunities and endless smiles.',
+    'Rise and shine, for today holds infinite possibilities.',
+    'Wishing you a peaceful heart and a productive day.',
 ];
+
 
 // Function to generate random content
 function generateRandomContent() {
