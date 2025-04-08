@@ -2,9 +2,9 @@
 
 // Arrays of sample images and greetings
 const images = [
-    "https://loremflickr.com/320/240?random=1",
-    "https://loremflickr.com/320/240?random=2",
-    "https://loremflickr.com/320/240?random=3"
+    "https://picsum.photos/200?random=1",
+    "https://picsum.photos/200?random=2",
+    "https://picsum.photos/200?random=3"
   ];
 
 
