@@ -1,5 +1,3 @@
-// public/app.js
-
 // Function to fetch a random image from an API
 function fetchRandomImage() {
     return fetch('https://picsum.photos/200')  // API for random image
@@ -14,7 +12,7 @@ function fetchRandomImage() {
 function fetchRandomQuote() {
     return fetch('https://quotes.rest/qod?language=en')  // API for random quote
         .then((response) => response.json())  // Parse the JSON response
-        .then((data) => data.data[0].quote)  // Extract the quote from the response data
+        .then((data) => data.contents.quotes[0].quote)  // Extract the quote from the response data
         .catch((error) => {
             console.error('Error fetching quote:', error);
             throw error;  // Rethrow the error so it can be handled later
@@ -37,11 +35,13 @@ function generateRandomContent() {
 
 // Event listener for button click
 document.getElementById('generateBtn').addEventListener('click', () => {
+    console.log("Button clicked!"); // Debugging line
     const imageContainer = document.getElementById('image-container');
     const quoteContainer = document.getElementById('quote');
 
     generateRandomContent()
         .then((content) => {
+            console.log('Content:', content); // Debugging line
             // Display the random image and quote
             const img = document.createElement('img');
             img.src = content.image;
