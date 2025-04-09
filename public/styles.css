@@ -49,10 +49,10 @@ h1 {
     border-radius: 15px;
 }
 
-.greeting {
+.quote { /* Styled similarly to greeting */
     font-size: 1.3em;
     color: #666;
-    font-style: italic;  /* Italicize the greeting */
+    font-style: italic;  /* Italicize the quote */
     margin-top: 20px;
     font-weight: lighter;
 }
