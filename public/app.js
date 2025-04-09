@@ -39,12 +39,18 @@ function fetchRandomImage() {
         });
 }
 
-// Function to fetch a random quote from QuoteGarden API
+// Function to fetch a random quote from API Ninjas API
 function fetchRandomQuote() {
-    return fetch('https://api.api-ninjas.com/v1/quotes')  // QuoteGarden API for random quote
+    const apiKey = 'OpDPC5DfsPorJFTp6DZLGw==yFFtyII7iqrVWlVe'; // Your API key
+    return fetch('https://api.api-ninjas.com/v1/quotes', {
+        method: 'GET',
+        headers: {
+            'X-Api-Key': apiKey // Add the API key in the request headers
+        }
+    })
         .then((response) => response.json())  // Parse the JSON response
         .then((data) => {
-            return data.data[0].quote;  // Extract the quote from the API response
+            return data[0].quote;  // Extract the quote from the API response
         })
         .catch((error) => {
             console.error('Error fetching quote:', error);
