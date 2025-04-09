@@ -12,7 +12,7 @@ function fetchRandomImage() {
 
 // Function to fetch a random quote from an API
 function fetchRandomQuote() {
-    return fetch('https://quote-garden.herokuapp.com/api/v3/quotes/random')  // API for random quote
+    return fetch('https://quotes.rest/qod?language=en')  // API for random quote
         .then((response) => response.json())  // Parse the JSON response
         .then((data) => data.data[0].quote)  // Extract the quote from the response data
         .catch((error) => {
