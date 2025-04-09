@@ -41,7 +41,7 @@ function fetchRandomImage() {
 
 // Function to fetch a random quote from QuoteGarden API
 function fetchRandomQuote() {
-    return fetch('https://api.quotable.io/random')  // QuoteGarden API for random quote
+    return fetch('https://api.api-ninjas.com/v1/quotes')  // QuoteGarden API for random quote
         .then((response) => response.json())  // Parse the JSON response
         .then((data) => {
             return data.data[0].quote;  // Extract the quote from the API response
